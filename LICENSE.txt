@@ -1,0 +1,17 @@
+Copyright (c) 2025 KARTHIK PALADUGU (24211a04h1@bvrit.ac.in)
+
+All Rights Reserved.
+
+This software and associated documentation files (the "Software") are the intellectual property of KARTHIK PALADUGU. Permission is hereby granted to any individual or organization to use this Software for personal, non-commercial, and educational purposes only.
+
+Commercial use, redistribution, modification, sublicensing, or selling copies of the Software, either in whole or in part, is strictly prohibited without the express written consent of KARTHIK PALADUGU. Any such unauthorized actions may result in legal consequences.
+
+If you wish to use, modify, or distribute this Software for any commercial or public-facing purpose, you must first obtain written permission from the copyright holder and may be subject to a licensing fee.
+
+For permissions or inquiries, contact:
+KARTHIK PALADUGU  
+Email: 24211a04h1@bvrit.ac.in
+
+Unauthorized copying, redistribution, or modification of this Software is prohibited.
+
+This Software is provided "as is", without warranty of any kind, express or implied.

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Note Reader Monster</title>
+  <link rel="stylesheet" href="style.css">
+  <audio id="clickSound" src="click.mp3"></audio>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+</head>
+<div id="particles-js"></div>
+
+<body>
+  <div id="tsparticles"></div>
+
+  
+
+  <div id="loader"></div>
+
+<div id="splash">
+  <!-- New Stylish Sidebar Menu -->
+<div id="sidebarMenu" class="sidebar">
+  <h2 class="logo">⚡ Note Reader</h2>
+  <ul>
+    <li><button onclick="toggleSettings()">Settings</button></li>
+    <li><button onclick="openAbout()">About</button></li>
+    <li><button onclick="clearNotes()">Clear Notes</button></li>
+  </ul>
+</div>
+
+  <h1>📖 Note Reader Monster</h1>
+  <p style="position: absolute; top: 20px; left: 50%; transform: translateX(-50%); color: #050000; font-size: 1.1rem;">
+    🚀 Made by BVRIT Student 🚀
+  </p>
+  
+</div>
+
+<div id="particles-js"></div>
+
+<div class="menu-btn">☰</div>
+
+<div class="menu">
+  <h2>Settings</h2>
+  <label>Voice:
+    <select id="voiceSelect"></select>
+  </label>
+  <label>Reading Speed:
+    <input type="range" id="rateSlider" min="0.3" max="2" step="0.1" value="1">
+  </label>
+  <label>Spelling Speed:
+    <input type="range" id="spellRateSlider" min="0.1" max="1" step="0.1" value="0.3">
+  </label>
+  <label>Theme:
+    <select id="themeSelect">
+      <option value="neon">Neon</option>
+      <option value="retro">Retro</option>
+      <option value="minimal">Minimal</option>
+      <option value="texture">Textured</option>
+    </select>
+  </label>
+  <button id="darkModeBtn">Toggle Dark Mode</button>
+  <button class="menu-button" onclick="saveNote()">Save Note</button>
+  <button class="menu-button" onclick="loadNote()">Load Note</button>
+  <button id="helpBtn">Help (WASD)</button>
+  <button id="aboutBtn">About</button>
+</div>
+
+<div id="aboutModal" class="modal">
+  <div class="modal-content">
+    <h2>About This Project</h2>
+    <p>Made by BVRIT student.</p>
+    <h3>Cool Ideas to Add Next</h3>
+    <ul>
+      <li>Textured themes</li>
+      <li>Retro glitch text effects</li>
+      <li>Particle animations</li>
+      <li>Sound effects on buttons</li>
+      <li>Live note sharing</li>
+    </ul>
+    <button id="closeAbout">Close</button>
+  </div>
+</div>
+
+
+<textarea id="textInput" rows="10" placeholder="Paste or type your notes here..."></textarea>
+
+
+<div class="controls">
+
+
+  <button id="startBtn">Start Reading</button>
+  <p id="wordCounter"></p>
+</div>
+
+<script src="particles.js"></script>
+<script src="script.js"></script>
+<script src="particles.js"></script>
+<script>
+  particlesJS.load('particles-js', 'particles-config.json', function() {
+    console.log('particles.js config loaded');
+  });
+</script>
+<audio id="clickSound" src="click.mp3"></audio>
+
+</body>
+</html>

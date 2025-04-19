@@ -1,0 +1,329 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  transition: background 0.6s;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+textarea {
+  width: 70%;
+  margin: 60px auto 10px;
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 12px;
+  background: #ffffffcc;
+  transition: 0.5s;
+}
+
+.controls {
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  margin: 8px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #05f3c0;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 0px;
+  left: 15px;
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 260px;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  height: 100%;
+  padding: 20px;
+  transition: 0.4s;
+  z-index: 90;
+}
+
+.menu.open {
+  left: 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.85);
+  z-index: 999;
+}
+
+.modal-content {
+  background: #111;
+  margin: 10% auto;
+  padding: 20px;
+  width: 60%;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+}
+
+#splashScreen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, #000, #111);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.neon {
+  background: linear-gradient(135deg, #0f0, #00f);
+}
+
+.retro {
+  background: repeating-linear-gradient(45deg, #222, #333 10px);
+}
+
+.minimal {
+  background: #eee;
+}
+
+.texture {
+  background: url('your-textured-background.png') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.highlight {
+  background: yellow;
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.glitch {
+  color: white;
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 2px red; }
+  20% { text-shadow: -2px -2px cyan; }
+  40% { text-shadow: 2px -2px lime; }
+  60% { text-shadow: -2px 2px yellow; }
+  100% { text-shadow: 2px 2px red; }
+}
+button:hover {
+  box-shadow: 0 0 12px #0ff, 0 0 20px #0ff inset;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.menu {
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.5);
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#splashScreen {
+  transition: opacity 0.5s ease;
+}
+body.neon {
+  background: linear-gradient(135deg,  rgb(250, 62, 5), rgb(247, 7, 155));
+  color: #fff;
+}
+body.retro {
+  background: #333 url('retro-texture.png') repeat;
+  color: #fff;
+}
+body.minimal {
+  background: #f4f4f4;
+  color: #333;
+}
+body.texture {
+  background: url('assets/your-texture.png') repeat;
+  color: #fff;
+}
+body.theme-neon {
+  background: linear-gradient(135deg, rgb(250, 62, 5), rgb(247, 7, 155));
+  color: #fff;
+}
+
+body.theme-retro {
+  background: #f5deb3 url('retro-texture.png') repeat;
+  color: #222;
+}
+
+body.theme-minimal {
+  background: #449e8f;
+  color: #333;
+}
+
+body.theme-textured {
+  background: url('assets/your-texture.png') repeat;
+  color: #111;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #000000;
+  color: #eee;
+}
+/* Fade-out transition (optional if you already had) */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.current-word {
+  background: linear-gradient(45deg, #00f, rgba(27, 235, 45, 0.678));
+  padding: 100px 100px;
+  border-radius: 6px;
+  color: #fff;
+  animation: pulse 0.7s infinite alternate;
+}
+
+@keyframes pulse {
+  from { box-shadow: 0 0 5px #00f; }
+  to { box-shadow: 0 0 15px #0ff; }
+}
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px;
+  height: 100%;
+  background: linear-gradient(180deg, #222, #000);
+  padding: 20px;
+  box-shadow: 4px 0 12px rgba(0,0,0,0.5);
+  color: #fff;
+  z-index: 999;
+}
+
+.sidebar .logo {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.sidebar ul li button:hover {
+  background: #666;
+}
+.theme-textured {
+  background: url('assets/your-texture.png') repeat;
+  color: #111;
+}
+select {
+  padding: 10px;
+  border-radius: 6px;
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+  transition: 0.3s;
+}
+
+select:hover {
+  background: #444;
+}
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+button, .sidebar ul li button {
+  transition: 0.3s;
+  box-shadow: 0 0 0 transparent;
+}
+
+button:hover, .sidebar ul li button:hover {
+  box-shadow: 0 0 8px #0ff, 0 0 16px #0ff, 0 0 24px #0ff;
+  background: #222;
+}
+.current-word {
+  background: linear-gradient(90deg, #0ff, #f0f, #0ff);
+  background-size: 200% 200%;
+  animation: pulseGlow 1s infinite;
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: #000;
+}
+
+@keyframes pulseGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+body {
+  transition: background 0.8s ease, color 0.8s ease;
+  opacity: 1;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+body {
+  transition: all 0.4s ease;
+}
