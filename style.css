@@ -125,7 +125,7 @@ button:hover {
 }
 
 .texture {
-  background: url('your-textured-background.png') no-repeat center center fixed;
+  background: url('your-textured.png') no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
 }
